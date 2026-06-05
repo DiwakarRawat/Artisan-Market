@@ -1,0 +1,221 @@
+.orders-page {
+  background: #FFF8DC;
+  min-height: calc(100vh - 64px);
+  padding: var(--spacing-2xl) 0;
+}
+
+[data-theme="dark"] .orders-page {
+  background: linear-gradient(135deg, #3E2723 0%, #5c2e0a 50%, #8B4513 100%);
+  background-attachment: fixed;
+}
+
+.orders-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  position: relative;
+}
+
+/* Notification Toast */
+.orders-notification {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: slideInRight 0.3s ease-out;
+  max-width: 400px;
+}
+
+.orders-notification.success {
+  background: #065f46;
+  color: white;
+}
+
+.orders-notification.error {
+  background: #991b1b;
+  color: white;
+}
+
+.notification-icon {
+  font-size: var(--text-lg);
+  flex-shrink: 0;
+}
+
+.notification-message {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  flex: 1;
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: var(--text-xl);
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color var(--transition-fast);
+}
+
+.notification-close:hover {
+  color: white;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.orders-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.orders-title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-sm);
+}
+
+.orders-subtitle {
+  font-size: var(--text-base);
+  color: var(--gray-600);
+}
+
+.orders-filters {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-xl);
+  background: white;
+  cursor: pointer;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--gray-700);
+  transition: all var(--transition-base);
+}
+
+.filter-chip:hover {
+  border-color: var(--primary-light);
+  background-color: rgba(139, 69, 19, 0.05);
+}
+
+.filter-chip.active {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.orders-list {
+  /* Orders will be listed here */
+}
+
+.orders-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.empty-orders-icon {
+  font-size: 5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.empty-orders-title {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-sm);
+}
+
+.empty-orders-message {
+  font-size: var(--text-base);
+  color: var(--gray-600);
+  margin-bottom: var(--spacing-xl);
+}
+
+.orders-loading {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] .orders-title {
+  color: #f3f4f6;
+}
+
+[data-theme="dark"] .orders-subtitle {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .orders-filters {
+  background: #2d2d2d;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .filter-chip {
+  background: transparent;
+  border-color: #525252;
+  color: #e5e5e5;
+}
+
+[data-theme="dark"] .filter-chip:hover {
+  border-color: #F4A460;
+  background-color: rgba(244, 164, 96, 0.1);
+  color: #FFF8DC;
+}
+
+[data-theme="dark"] .filter-chip.active {
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+}
+
+[data-theme="dark"] .orders-empty {
+  background: #2d2d2d;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .empty-orders-title {
+  color: #f3f4f6;
+}
+
+[data-theme="dark"] .empty-orders-message {
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .orders-title {
+    font-size: var(--text-2xl);
+  }
+
+  .orders-filters {
+    justify-content: center;
+  }
+}

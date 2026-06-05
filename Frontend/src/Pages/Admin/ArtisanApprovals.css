@@ -1,0 +1,157 @@
+/* ═══════════════════════════════════════════════
+   ARTISAN APPROVALS PAGE — Artisan Theme
+   ═══════════════════════════════════════════════ */
+
+.artisan-approvals-page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #FFF8DC 0%, #f5e6c8 40%, #ede0c8 100%);
+  background-attachment: fixed;
+}
+
+[data-theme="dark"] .artisan-approvals-page {
+  background: linear-gradient(160deg, #2a1500 0%, #3E2723 50%, #1a0a00 100%);
+  background-attachment: fixed;
+}
+
+/* ── Page Header Banner ── */
+.artisan-approvals-page > .artisan-approvals-container:first-child {
+  padding-top: 0;
+}
+
+.artisan-approvals-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+}
+
+/* ── Back Link ── */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #8B4513;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1.5px solid rgba(139, 69, 19, 0.25);
+  border-radius: 8px;
+  background: rgba(139, 69, 19, 0.05);
+  transition: all 0.22s ease;
+  margin-bottom: 2rem;
+}
+
+.back-link:hover {
+  background: rgba(139, 69, 19, 0.1);
+  border-color: #8B4513;
+  transform: translateX(-2px);
+}
+
+[data-theme="dark"] .back-link {
+  color: #F4A460;
+  border-color: rgba(244, 164, 96, 0.25);
+  background: rgba(244, 164, 96, 0.05);
+}
+
+[data-theme="dark"] .back-link:hover {
+  background: rgba(244, 164, 96, 0.1);
+  border-color: #F4A460;
+}
+
+/* ── Page Header ── */
+.artisan-approvals-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(139, 69, 19, 0.12);
+}
+
+[data-theme="dark"] .artisan-approvals-header {
+  border-bottom-color: rgba(244, 164, 96, 0.12);
+}
+
+.artisan-approvals-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #3E2723;
+  margin-bottom: 0.4rem;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  letter-spacing: -0.01em;
+}
+
+[data-theme="dark"] .artisan-approvals-title {
+  color: #FFF8DC;
+}
+
+.artisan-approvals-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+[data-theme="dark"] .artisan-approvals-subtitle {
+  color: #9ca3af;
+}
+
+/* ── Content ── */
+.artisan-approvals-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Loading ── */
+.artisan-approvals-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* ── Empty State ── */
+.artisan-approvals-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  border: 1.5px solid rgba(139, 69, 19, 0.1);
+}
+
+[data-theme="dark"] .artisan-approvals-empty {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(244, 164, 96, 0.1);
+}
+
+.empty-approvals-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.empty-approvals-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: #3E2723;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .empty-approvals-title {
+  color: #FFF8DC;
+}
+
+.empty-approvals-message {
+  font-size: var(--text-base);
+  color: #6b7280;
+}
+
+[data-theme="dark"] .empty-approvals-message {
+  color: #9ca3af;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .artisan-approvals-container {
+    padding: 1.75rem 1.25rem 3rem;
+  }
+
+  .artisan-approvals-title {
+    font-size: 1.5rem;
+  }
+}

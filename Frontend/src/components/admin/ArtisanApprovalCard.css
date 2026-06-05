@@ -1,0 +1,301 @@
+/* ═══════════════════════════════════════════════
+   ARTISAN APPROVAL CARD — Artisan Theme
+   ═══════════════════════════════════════════════ */
+
+.artisan-approval-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  padding: 1.75rem;
+  margin-bottom: 1.25rem;
+  border: 1.5px solid rgba(139, 69, 19, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.artisan-approval-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #8B4513, #D2691E);
+  border-radius: 14px 0 0 14px;
+}
+
+.artisan-approval-card:hover {
+  box-shadow: 0 10px 30px rgba(139, 69, 19, 0.12);
+  border-color: rgba(139, 69, 19, 0.25);
+  transform: translateY(-2px);
+}
+
+[data-theme="dark"] .artisan-approval-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(244, 164, 96, 0.12);
+}
+
+[data-theme="dark"] .artisan-approval-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(244, 164, 96, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Card Header ── */
+.artisan-approval-header {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(139, 69, 19, 0.08);
+  padding-left: 0.5rem;
+}
+
+[data-theme="dark"] .artisan-approval-header {
+  border-bottom-color: rgba(244, 164, 96, 0.08);
+}
+
+/* ── Avatar ── */
+.artisan-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B4513, #D2691E);
+  color: #FFF8DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(139, 69, 19, 0.3);
+}
+
+/* ── Info ── */
+.artisan-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.artisan-name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.artisan-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+[data-theme="dark"] .artisan-name {
+  color: #f9fafb;
+}
+
+.artisan-shop-name {
+  font-size: 0.85rem;
+  color: #8B4513;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+[data-theme="dark"] .artisan-shop-name {
+  color: #F4A460;
+}
+
+.artisan-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: #6b7280;
+  padding: 0.25rem 0.65rem;
+  background: rgba(139, 69, 19, 0.05);
+  border-radius: 6px;
+}
+
+[data-theme="dark"] .contact-item {
+  color: #9ca3af;
+  background: rgba(244, 164, 96, 0.05);
+}
+
+/* ── Pending Badge ── */
+.badge.badge-warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  padding: 0.25rem 0.7rem;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+[data-theme="dark"] .badge.badge-warning {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.18);
+}
+
+/* ── Body ── */
+.artisan-approval-body {
+  margin-bottom: 1.25rem;
+  padding-left: 0.5rem;
+}
+
+.artisan-description-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #8B4513;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .artisan-description-label {
+  color: #F4A460;
+}
+
+.artisan-description {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.65;
+  padding: 1rem 1.1rem;
+  background: rgba(139, 69, 19, 0.04);
+  border-radius: 8px;
+  border-left: 3px solid rgba(139, 69, 19, 0.2);
+}
+
+[data-theme="dark"] .artisan-description {
+  color: #d1d5db;
+  background: rgba(244, 164, 96, 0.04);
+  border-left-color: rgba(244, 164, 96, 0.2);
+}
+
+/* ── Footer ── */
+.artisan-approval-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.1rem;
+  padding-left: 0.5rem;
+  border-top: 1px solid rgba(139, 69, 19, 0.08);
+}
+
+[data-theme="dark"] .artisan-approval-footer {
+  border-top-color: rgba(244, 164, 96, 0.08);
+}
+
+.artisan-meta {
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.artisan-approval-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+/* ── Action Buttons ── */
+.btn-danger {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  border: 1.5px solid rgba(220, 38, 38, 0.3);
+  background: rgba(239, 68, 68, 0.07);
+  color: #dc2626;
+  font-size: 0.84rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.22s ease;
+}
+
+.btn-danger:hover {
+  background: rgba(239, 68, 68, 0.14);
+  border-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .btn-danger {
+  color: #fca5a5;
+  background: rgba(239, 68, 68, 0.08);
+  border-color: rgba(220, 38, 38, 0.25);
+}
+
+.btn-success {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  background: linear-gradient(135deg, #8B4513, #D2691E);
+  color: #FFF8DC;
+  font-size: 0.84rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.25);
+}
+
+.btn-success:hover {
+  background: linear-gradient(135deg, #5c2e0a, #8B4513);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(139, 69, 19, 0.35);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .artisan-approval-card {
+    padding: 1.25rem;
+  }
+
+  .artisan-approval-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .artisan-name-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .artisan-contact {
+    justify-content: center;
+  }
+
+  .artisan-approval-footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .artisan-approval-actions {
+    width: 100%;
+  }
+
+  .artisan-approval-actions .btn-danger,
+  .artisan-approval-actions .btn-success {
+    flex: 1;
+    justify-content: center;
+  }
+}

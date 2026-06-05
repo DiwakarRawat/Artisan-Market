@@ -1,0 +1,118 @@
+/* ═══════════════════════════════════════════════
+   PRODUCT MODERATION PAGE — Artisan Theme
+   ═══════════════════════════════════════════════ */
+
+.product-moderation-page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #FFF8DC 0%, #f5e6c8 40%, #ede0c8 100%);
+  background-attachment: fixed;
+}
+
+[data-theme="dark"] .product-moderation-page {
+  background: linear-gradient(160deg, #2a1500 0%, #3E2723 50%, #1a0a00 100%);
+  background-attachment: fixed;
+}
+
+.product-moderation-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+}
+
+/* ── Page Header ── */
+.product-moderation-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(139, 69, 19, 0.12);
+}
+
+[data-theme="dark"] .product-moderation-header {
+  border-bottom-color: rgba(244, 164, 96, 0.12);
+}
+
+.product-moderation-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #3E2723;
+  margin-bottom: 0.4rem;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  letter-spacing: -0.01em;
+}
+
+[data-theme="dark"] .product-moderation-title {
+  color: #FFF8DC;
+}
+
+.product-moderation-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+[data-theme="dark"] .product-moderation-subtitle {
+  color: #9ca3af;
+}
+
+/* ── Content ── */
+.product-moderation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Loading ── */
+.product-moderation-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+/* ── Empty State ── */
+.product-moderation-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  border: 1.5px solid rgba(139, 69, 19, 0.1);
+}
+
+[data-theme="dark"] .product-moderation-empty {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(244, 164, 96, 0.1);
+}
+
+.empty-moderation-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.empty-moderation-title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: #3E2723;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme="dark"] .empty-moderation-title {
+  color: #FFF8DC;
+}
+
+.empty-moderation-message {
+  font-size: var(--text-base);
+  color: #6b7280;
+}
+
+[data-theme="dark"] .empty-moderation-message {
+  color: #9ca3af;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .product-moderation-container {
+    padding: 1.75rem 1.25rem 3rem;
+  }
+
+  .product-moderation-title {
+    font-size: 1.5rem;
+  }
+}

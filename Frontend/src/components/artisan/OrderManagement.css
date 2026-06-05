@@ -1,0 +1,183 @@
+.order-management {
+  /* Orders management container */
+}
+
+.orders-tabs {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-xl);
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.order-tab {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--gray-600);
+  transition: all var(--transition-base);
+  margin-bottom: -2px;
+}
+
+.order-tab:hover {
+  color: var(--primary-color);
+}
+
+.order-tab.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.order-tab-count {
+  margin-left: var(--spacing-xs);
+  padding: 0.125rem 0.5rem;
+  background-color: var(--gray-200);
+  border-radius: var(--radius-xl);
+  font-size: var(--text-xs);
+}
+
+.order-tab.active .order-tab-count {
+  background-color: rgba(139, 69, 19, 0.2);
+  color: var(--primary-color);
+}
+
+.artisan-order-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.artisan-order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.artisan-order-id {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+  margin-bottom: var(--spacing-xs);
+}
+
+.artisan-order-date {
+  font-size: var(--text-sm);
+  color: var(--gray-500);
+}
+
+.artisan-order-items {
+  margin-bottom: var(--spacing-lg);
+}
+
+.artisan-order-item {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--gray-50);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.artisan-order-item-image {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  object-fit: cover;
+}
+
+.artisan-order-item-details {
+  flex: 1;
+}
+
+.artisan-order-item-name {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-xs);
+}
+
+.artisan-order-item-quantity {
+  font-size: var(--text-sm);
+  color: var(--gray-600);
+}
+
+.artisan-order-item-price {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: right;
+}
+
+.artisan-order-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--gray-200);
+}
+
+.artisan-order-total {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.artisan-order-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.status-update-select {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+
+.orders-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.empty-orders-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.empty-orders-text {
+  font-size: var(--text-base);
+  color: var(--gray-600);
+}
+
+@media (max-width: 768px) {
+  .orders-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .artisan-order-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .artisan-order-item {
+    flex-direction: column;
+  }
+
+  .artisan-order-footer {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+  }
+}

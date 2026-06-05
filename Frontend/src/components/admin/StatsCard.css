@@ -1,0 +1,182 @@
+/* ═══════════════════════════════════════════════
+   STATS CARD — Artisan Marketplace Theme
+   ═══════════════════════════════════════════════ */
+
+.admin-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ── Base Card ── */
+.admin-stat-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 1.5rem 1.5rem 1.25rem;
+  border: 1.5px solid rgba(139, 69, 19, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+/* Colored top border accent */
+.admin-stat-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 14px 14px 0 0;
+}
+
+.admin-stat-card.users::after    { background: linear-gradient(90deg, #3b82f6, #60a5fa); }
+.admin-stat-card.artisans::after { background: linear-gradient(90deg, #8B4513, #D2691E); }
+.admin-stat-card.products::after { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.admin-stat-card.orders::after   { background: linear-gradient(90deg, #10b981, #34d399); }
+
+.admin-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(139, 69, 19, 0.12);
+}
+
+[data-theme="dark"] .admin-stat-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(244, 164, 96, 0.1);
+}
+
+[data-theme="dark"] .admin-stat-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  border-color: rgba(244, 164, 96, 0.2);
+}
+
+/* ── Header Row ── */
+.admin-stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.1rem;
+}
+
+/* ── Icon Wrapper ── */
+.admin-stat-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.admin-stat-card.users .admin-stat-icon-wrapper {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.admin-stat-card.artisans .admin-stat-icon-wrapper {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.12) 0%, rgba(210, 105, 30, 0.1) 100%);
+}
+
+.admin-stat-card.products .admin-stat-icon-wrapper {
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.admin-stat-card.orders .admin-stat-icon-wrapper {
+  background: rgba(16, 185, 129, 0.1);
+}
+
+/* ── Badge ── */
+.admin-stat-badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: 100px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.admin-stat-badge.pending {
+  background: rgba(245, 158, 11, 0.1);
+  color: #b45309;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+[data-theme="dark"] .admin-stat-badge.pending {
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.07);
+  border-color: rgba(245, 158, 11, 0.15);
+}
+
+/* ── Stat Body ── */
+.admin-stat-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8B4513;
+  margin-bottom: 0.3rem;
+}
+
+[data-theme="dark"] .admin-stat-label {
+  color: #F4A460;
+}
+
+.admin-stat-value {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-theme="dark"] .admin-stat-value {
+  color: #f9fafb;
+}
+
+.admin-stat-description {
+  font-size: 0.8rem;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+[data-theme="dark"] .admin-stat-description {
+  color: #9ca3af;
+}
+
+/* ── Trend indicator ── */
+.admin-stat-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.admin-stat-trend.up {
+  color: #059669;
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.admin-stat-trend.down {
+  color: #dc2626;
+  background: rgba(239, 68, 68, 0.08);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .admin-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
