@@ -1,0 +1,192 @@
+[2026-06-05T14:49:53.867Z] 🚀 Single Server running on port 5000
+[2026-06-05T14:50:14.078Z] GET /api/products
+[2026-06-05T14:50:14.084Z] GET /api/products
+[2026-06-05T14:50:20.309Z] GET /api/health
+[2026-06-05T14:50:34.855Z] POST /api/orders
+[2026-06-05T14:50:34.856Z] New order placement request received. Payment method: cod
+[2026-06-05T14:50:34.857Z] Buyer resolved to Name: "Sarthak Monga", Email: "sarop8111@gmail.com"
+[2026-06-05T14:50:34.858Z] Preparing email for sarop8111@gmail.com from sender your_brevo_account_email@example.com
+[2026-06-05T14:50:35.928Z] ✅ Email sent successfully via Brevo to sarop8111@gmail.com. Message ID: undefined
+[2026-06-05T14:51:10.574Z] 🚀 Single Server running on port 5000
+[2026-06-05T14:51:16.606Z] 🚀 Single Server running on port 5000
+[2026-06-05T14:53:11.188Z] 🚀 Single Server running on port 5000
+[2026-06-05T14:53:13.171Z] GET /api/orders
+[2026-06-05T14:53:21.910Z] GET /api/health
+[2026-06-05T14:53:26.194Z] GET /api/products
+[2026-06-05T14:53:26.198Z] GET /api/products
+[2026-06-05T14:53:38.327Z] POST /api/orders
+[2026-06-05T14:53:38.329Z] New order placement request received. Payment method: cod
+[2026-06-05T14:53:38.330Z] Buyer resolved to Name: "Sarthak Monga", Email: "sarop8111@gmail.com"
+[2026-06-05T14:53:38.331Z] Preparing email for sarop8111@gmail.com from sender your_brevo_account_email@example.com
+[2026-06-05T14:53:39.129Z] ✅ Email sent successfully via Brevo to sarop8111@gmail.com. Message ID: <202606051453.32906319409@smtp-relay.mailin.fr>
+[2026-06-05T14:55:06.537Z] 🚀 Single Server running on port 5000
+[2026-06-05T14:58:11.143Z] GET /api/products
+[2026-06-05T14:58:11.148Z] GET /api/products
+[2026-06-05T14:58:24.054Z] POST /api/orders
+[2026-06-05T14:58:24.055Z] New order placement request received. Payment method: cod
+[2026-06-05T14:58:24.056Z] Buyer resolved to Name: "Sarthak Monga", Email: "sarop8111@gmail.com"
+[2026-06-05T14:58:24.057Z] Preparing email for sarop8111@gmail.com from sender your_brevo_account_email@example.com
+[2026-06-05T14:58:25.062Z] ✅ Email sent successfully via Brevo to sarop8111@gmail.com. Message ID: <202606051458.79162405469@smtp-relay.mailin.fr>
+[2026-06-05T14:59:49.944Z] 🚀 Single Server running on port 5000
+[2026-06-05T15:00:47.118Z] GET /api/products
+[2026-06-05T15:00:47.123Z] GET /api/products
+[2026-06-05T15:00:58.535Z] POST /api/orders
+[2026-06-05T15:00:58.536Z] New order placement request received. Payment method: cod
+[2026-06-05T15:00:58.537Z] Buyer resolved to Name: "Sarthak Monga", Email: "sarop8111@gmail.com"
+[2026-06-05T15:00:58.538Z] Preparing email for sarop8111@gmail.com from sender your_brevo_account_email@example.com
+[2026-06-05T15:00:59.664Z] ✅ Email sent successfully via Brevo REST API to sarop8111@gmail.com. Message ID: <202606051501.83297410053@smtp-relay.mailin.fr>
+[2026-06-05T15:01:34.943Z] 🚀 Single Server running on port 5000
+[2026-06-05T15:02:41.631Z] GET /api/products
+[2026-06-05T15:02:41.637Z] GET /api/products
+[2026-06-05T15:02:59.663Z] POST /api/orders
+[2026-06-05T15:02:59.665Z] New order placement request received. Payment method: cod
+[2026-06-05T15:02:59.665Z] Buyer resolved to Name: "Sarthak Monga", Email: "sarop8111@gmail.com"
+[2026-06-05T15:02:59.667Z] Preparing email for sarop8111@gmail.com from sender your_brevo_account_email@example.com
+[2026-06-05T15:03:00.693Z] ✅ Email sent successfully via Brevo REST API to sarop8111@gmail.com. Message ID: <202606051503.91558524458@smtp-relay.mailin.fr>
+[2026-06-05T15:04:20.733Z] 🚀 Single Server running on port 5000
+[2026-06-05T15:04:54.013Z] GET /api/products
+[2026-06-05T15:04:54.021Z] GET /api/products
+[2026-06-05T15:05:03.745Z] POST /api/orders
+[2026-06-05T15:05:03.746Z] New order placement request received. Payment method: cod
+[2026-06-05T15:05:03.747Z] Buyer resolved to Name: "Sarthak Monga", Email: "sarop8111@gmail.com"
+[2026-06-05T15:05:03.748Z] Preparing email for sarop8111@gmail.com from sender diwakarrawat2003@gmail.com
+[2026-06-05T15:05:04.796Z] ✅ Email sent successfully via Brevo REST API to sarop8111@gmail.com. Message ID: <202606051505.39435686267@smtp-relay.mailin.fr>
+[2026-06-05T15:07:14.461Z] GET /api/products
+[2026-06-05T15:07:14.463Z] GET /api/products
+[2026-06-05T15:08:39.380Z] POST /api/auth/login
+[2026-06-05T15:08:39.412Z] GET /api/products
+[2026-06-05T15:08:39.416Z] GET /api/products
+[2026-06-05T15:09:54.838Z] 🚀 Single Server running on port 5000
+[2026-06-05T15:10:18.635Z] GET /api/products/1
+[2026-06-05T15:10:18.643Z] GET /api/products/1
+[2026-06-05T15:10:20.340Z] POST /api/cart/add
+[2026-06-05T15:10:20.341Z] Add to cart request received for Product ID: 1
+[2026-06-05T15:10:24.096Z] GET /api/products
+[2026-06-05T15:10:24.101Z] GET /api/products
+[2026-06-05T15:10:33.365Z] POST /api/orders
+[2026-06-05T15:10:33.365Z] New order placement request received. Payment method: cod
+[2026-06-05T15:10:33.366Z] Buyer resolved to Name: "Sarthak Monga", Email: "sarop8111@gmail.com"
+[2026-06-05T15:10:33.367Z] Preparing email for sarop8111@gmail.com from sender diwakarrawat2003@gmail.com
+[2026-06-05T15:10:34.433Z] ✅ Email sent successfully via Brevo REST API to sarop8111@gmail.com. Message ID: <202606051510.37307584463@smtp-relay.mailin.fr>
+[2026-06-05T15:11:04.756Z] GET /api/products
+[2026-06-05T15:11:04.759Z] GET /api/products
+[2026-06-05T15:11:07.180Z] GET /api/products/1
+[2026-06-05T15:11:07.183Z] GET /api/products/1
+[2026-06-05T15:13:52.935Z] GET /api/products/1
+[2026-06-05T15:13:52.937Z] GET /api/products/1
+[2026-06-05T15:14:44.455Z] GET /api/products
+[2026-06-05T15:14:44.457Z] GET /api/products
+[2026-06-05T15:14:49.885Z] GET /api/products/7
+[2026-06-05T15:14:49.887Z] GET /api/products/7
+[2026-06-05T15:20:14.287Z] GET /api/products/7
+[2026-06-05T15:20:14.289Z] GET /api/products/7
+[2026-06-05T15:20:45.925Z] GET /api/products/7
+[2026-06-05T15:20:45.930Z] GET /api/products/7
+[2026-06-05T15:20:56.261Z] GET /api/products/7
+[2026-06-05T15:20:56.264Z] GET /api/products/7
+[2026-06-05T15:20:59.333Z] GET /api/products/7
+[2026-06-05T15:20:59.336Z] GET /api/products/7
+[2026-06-05T15:21:14.553Z] GET /api/products/7
+[2026-06-05T15:21:14.556Z] GET /api/products/7
+[2026-06-05T15:21:16.881Z] GET /api/products
+[2026-06-05T15:21:16.884Z] GET /api/products
+[2026-06-05T15:21:18.833Z] GET /api/products/1
+[2026-06-05T15:21:18.837Z] GET /api/products/1
+[2026-06-05T15:21:21.715Z] GET /api/products
+[2026-06-05T15:21:21.721Z] GET /api/products
+[2026-06-05T15:21:23.214Z] GET /api/products/2
+[2026-06-05T15:21:23.216Z] GET /api/products/2
+[2026-06-05T15:21:27.013Z] GET /api/products
+[2026-06-05T15:21:27.017Z] GET /api/products
+[2026-06-05T15:21:28.549Z] GET /api/products/12
+[2026-06-05T15:21:28.552Z] GET /api/products/12
+[2026-06-05T15:23:27.230Z] GET /api/products/12
+[2026-06-05T15:23:27.232Z] GET /api/products/12
+[2026-06-05T15:23:29.940Z] GET /api/products
+[2026-06-05T15:23:29.943Z] GET /api/products
+[2026-06-05T15:23:39.010Z] GET /api/products/3
+[2026-06-05T15:23:39.012Z] GET /api/products/3
+[2026-06-05T15:23:42.033Z] GET /api/products
+[2026-06-05T15:23:42.036Z] GET /api/products
+[2026-06-05T15:23:48.131Z] GET /api/products/4
+[2026-06-05T15:23:48.132Z] GET /api/products/4
+[2026-06-05T15:27:01.884Z] GET /api/products/4
+[2026-06-05T15:27:01.886Z] GET /api/products/4
+[2026-06-05T15:27:04.540Z] GET /api/products
+[2026-06-05T15:27:04.542Z] GET /api/products
+[2026-06-05T15:27:10.501Z] GET /api/products/6
+[2026-06-05T15:27:10.503Z] GET /api/products/6
+[2026-06-05T15:28:39.512Z] GET /api/products/6
+[2026-06-05T15:28:39.515Z] GET /api/products/6
+[2026-06-05T15:28:42.248Z] GET /api/products
+[2026-06-05T15:28:42.252Z] GET /api/products
+[2026-06-05T15:29:21.453Z] GET /api/products/6
+[2026-06-05T15:29:21.459Z] GET /api/products/6
+[2026-06-05T15:30:14.069Z] GET /api/products/6
+[2026-06-05T15:30:14.073Z] GET /api/products/6
+[2026-06-05T15:30:16.212Z] GET /api/products
+[2026-06-05T15:30:16.216Z] GET /api/products
+[2026-06-05T15:33:14.949Z] GET /api/products/12
+[2026-06-05T15:33:14.951Z] GET /api/products/12
+[2026-06-05T15:33:21.883Z] GET /api/products
+[2026-06-05T15:33:21.886Z] GET /api/products
+[2026-06-05T15:33:59.147Z] GET /api/products/1
+[2026-06-05T15:33:59.149Z] GET /api/products/1
+[2026-06-05T15:34:00.510Z] GET /api/products
+[2026-06-05T15:34:00.512Z] GET /api/products
+[2026-06-05T15:34:01.286Z] GET /api/products/7
+[2026-06-05T15:34:01.289Z] GET /api/products/7
+[2026-06-05T15:34:03.456Z] GET /api/products
+[2026-06-05T15:34:03.464Z] GET /api/products
+[2026-06-05T15:34:04.909Z] GET /api/products/2
+[2026-06-05T15:34:04.911Z] GET /api/products/2
+[2026-06-05T15:34:09.485Z] GET /api/products
+[2026-06-05T15:34:09.489Z] GET /api/products
+[2026-06-05T15:34:12.158Z] GET /api/products/12
+[2026-06-05T15:34:12.161Z] GET /api/products/12
+[2026-06-05T15:34:14.749Z] GET /api/products
+[2026-06-05T15:34:14.752Z] GET /api/products
+[2026-06-05T15:34:16.579Z] GET /api/products/3
+[2026-06-05T15:34:16.584Z] GET /api/products/3
+[2026-06-05T15:34:20.762Z] GET /api/products
+[2026-06-05T15:34:20.765Z] GET /api/products
+[2026-06-05T15:34:23.013Z] GET /api/products/11
+[2026-06-05T15:34:23.017Z] GET /api/products/11
+[2026-06-05T15:34:26.614Z] GET /api/products
+[2026-06-05T15:34:26.618Z] GET /api/products
+[2026-06-05T15:34:29.603Z] GET /api/products/8
+[2026-06-05T15:34:29.606Z] GET /api/products/8
+[2026-06-05T15:34:36.400Z] GET /api/products
+[2026-06-05T15:34:36.402Z] GET /api/products
+[2026-06-05T15:34:39.398Z] GET /api/products/5
+[2026-06-05T15:34:39.400Z] GET /api/products/5
+[2026-06-05T15:34:43.190Z] GET /api/products
+[2026-06-05T15:34:43.196Z] GET /api/products
+[2026-06-05T15:34:45.928Z] GET /api/products/6
+[2026-06-05T15:34:45.930Z] GET /api/products/6
+[2026-06-05T15:34:47.206Z] GET /api/products
+[2026-06-05T15:34:47.213Z] GET /api/products
+[2026-06-05T15:34:50.019Z] GET /api/products/10
+[2026-06-05T15:34:50.022Z] GET /api/products/10
+[2026-06-05T15:35:17.695Z] GET /api/products
+[2026-06-05T15:35:17.701Z] GET /api/products
+[2026-06-05T15:35:47.990Z] GET /api/products/10
+[2026-06-05T15:35:47.992Z] GET /api/products/10
+[2026-06-05T15:36:07.659Z] GET /api/products/10
+[2026-06-05T15:36:07.661Z] GET /api/products/10
+[2026-06-05T15:36:16.133Z] GET /api/products
+[2026-06-05T15:36:16.137Z] GET /api/products
+[2026-06-05T15:36:21.861Z] GET /api/products/9
+[2026-06-05T15:36:21.864Z] GET /api/products/9
+[2026-06-05T15:36:27.759Z] GET /api/products
+[2026-06-05T15:36:27.763Z] GET /api/products
+[2026-06-05T15:36:52.056Z] GET /api/products/1
+[2026-06-05T15:36:52.059Z] GET /api/products/1
+[2026-06-05T15:36:57.387Z] GET /api/products
+[2026-06-05T15:36:57.390Z] GET /api/products
+[2026-06-05T15:38:36.552Z] GET /api/products
+[2026-06-05T15:38:36.555Z] GET /api/products
+[2026-06-05T15:38:41.270Z] GET /api/products
+[2026-06-05T15:38:41.277Z] GET /api/products
+[2026-06-05T15:42:21.028Z] 🚀 Single Server running on port 5000
+[2026-06-05T15:43:21.171Z] 🚀 Single Server running on port 5000
